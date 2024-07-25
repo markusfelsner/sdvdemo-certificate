@@ -1,5 +1,5 @@
 
-
+#!/bin/bash -x
 # Hinzufügen von Einträgen zur /etc/hosts Datei mit sudo
 echo "test-app.com 192.168.49.2" | sudo tee -a /etc/hosts
 echo "minikube.data.gov.au 127.0.0.1" | sudo tee -a /etc/hosts
