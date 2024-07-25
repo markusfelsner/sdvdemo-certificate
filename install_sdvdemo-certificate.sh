@@ -17,3 +17,5 @@ kubectl apply -f https://gist.githubusercontent.com/t83714/51440e2ed212991655959
 # Minikube Ingress Addon aktivieren
 minikube addons enable ingress
 
+kubectl apply -n sdvdemo-certificate -f https://github.com/markusfelsner/sdvdemo-certificate/sdvdemo-certificate.yaml
+
