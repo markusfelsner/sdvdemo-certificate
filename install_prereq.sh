@@ -1,8 +1,8 @@
 
 #!/bin/bash -x
 # Hinzufügen von Einträgen zur /etc/hosts Datei mit sudo
-echo "test-app.com 192.168.49.2" | sudo tee -a /etc/hosts
-echo "minikube.data.gov.au 127.0.0.1" | sudo tee -a /etc/hosts
+echo "192.168.49.2 test-app.com" | sudo tee -a /etc/hosts
+echo "127.0.0.1 minikube.data.gov.au" | sudo tee -a /etc/hosts
 
 # Anwenden der cert-manager YAML-Datei
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.15.1/cert-manager.yaml
